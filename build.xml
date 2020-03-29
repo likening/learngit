@@ -35,7 +35,7 @@
 
         <target name="tar" depends="check" description="Create tar file for release">
             <echo msg="Creating distribution tar for ${phing.project.name} ${version}"/>
-            <copy file="./config.php.prod" tofile="./config.php" overwrite = "true"/>
+            <copy file="./config.php.${env}" tofile="./config.php" overwrite = "true"/>
             <delete file="${distfile}" failonerror="false"/>
             <tar destfile="${distfile}" compression="gzip">
                 <fileset refid="api.tar.gz"/>
