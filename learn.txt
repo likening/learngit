@@ -1,0 +1,19 @@
+#本地dev分支提交到远程dev分支
+git push origin dev:dev
+
+-u做关联
+git push -u origin master:master
+
+#删除远程dev分支
+git push origin :dev
+
+
+切换分支：$ git checkout [name]
+
+
+git pull origin dev:master
+git pull origin master:master
+git push origin master:master
+
+git fetch origin dev
+git merge
