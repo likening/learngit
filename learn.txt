@@ -17,3 +17,6 @@ git push origin master:master
 
 git fetch origin dev
 git merge
+
+#关联远程分支
+git push --set-upstream origin wangxiao
