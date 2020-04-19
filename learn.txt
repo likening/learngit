@@ -20,3 +20,5 @@ git merge
 
 #关联远程分支
 git push --set-upstream origin wangxiao
+
+git checkout -b local-branchname origin/remote_branchname  就可以将远程分支映射到本地命名为local-branchname  的一分支
